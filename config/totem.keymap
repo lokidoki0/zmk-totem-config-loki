@@ -119,10 +119,10 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         }; 
         num_layer {
             bindings = <
-            &kp PLUS     &kp N7       &kp N8          &kp  N9         &kp STAR           ___           ___               ___             ___           ___ 
-            &kp N0       &kp N4       &kp N5          &kp  N6         &kp EQUAL          ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL
-  &kp LPAR  &kp MINUS    &kp N1       &kp N2          &kp  N3         &kp FSLH           ___           &kp HYP           &kp MEH         ___           ___            &kp RPAR
-                                      &kp DOT         &kp  N0         &kp SEMI           ___           ___               ___
+            &kp FSLH     &kp N7       &kp N8          &kp  N9         &kp STAR           ___           ___               ___             ___           ___ 
+            &kp BSLH     &kp N4       &kp N5          &kp  N6         &kp EQUAL          ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL
+  &kp LPAR  &kp MINUS    &kp N1       &kp N2          &kp  N3         &kp PLUS           ___           &kp HYP           &kp MEH         ___           ___            &kp RPAR
+                                      &kp DOT         &kp  N0         &kp MINUS          ___           ___               ___
             >;
         };
         fun_layer {
