@@ -22,8 +22,6 @@
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LG(LBKT)
 #define FWD &kp LG(RBKT)
-#define PTAB &kp LS(LG(LBKT))
-#define NTAB &kp LS(LG(RBKT))
 
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
@@ -107,39 +105,39 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             bindings = <
             &kp Q         &kp W         &kp F            &kp P            &kp B              &kp J         &kp L              &kp U            &kp Y         &kp APOS 
             &hml LCTRL A  &hml LALT R   &hml LGUI S      &hml LSHFT T     &kp G              &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I   &hmr RCTRL O
-&kp PTAB    &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V              &kp K         &hmr HYP H         &hmr_meh MEH 0   &dot_morph    &qexcl        &kp NTAB
-                                        &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT          &kp RET       &lt NUM BSPC       &lt FUN DEL
+&kp  BACK   &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V              &kp K         &hmr HYP H         &hmr_meh MEH 0   &dot_morph    &qexcl        &kp FWD
+                                        &lt UTIL ESC     &lt NAV SPACE    &sk TAB            &kp RET       &lt NUM BSPC       &lt FUN DEL
             >;
         };
         nav_layer { 
             bindings = <
             ___          ___          ___             ___             ___                ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
-            &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT       ___                ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
-    BACK    ___           ___          &kp MEH         &kp HYP         ___                ___          &kp TILDE         ___             &kp FSLH      ___             FWD
+            &kp LCTRL    &kp LALT     &kp LGUI       &kp LSHFT        ___                ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
+    BACK    ___          ___          &kp MEH        &kp HYP          ___                ___           &kp TILDE         ___             &kp FSLH      ___             FWD
                                        ___            ___             ___                &kp RET       &kp BSPC          &kp DEL
             >;
         }; 
         num_layer {
             bindings = <
-            &kp PLUS     &kp N7       &kp N8          &kp  N9         &kp STAR           ___           ___               ___             ___           ___ 
-            &kp N0       &kp N4       &kp N5          &kp  N6         &kp EQUAL          ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL
-  &kp LPAR  &kp MINUS    &kp N1       &kp N2          &kp  N3         &kp FSLH           ___           &kp HYP           &kp MEH         ___           ___            &kp RPAR
-                                      ___             &kp  DOT        &kp SEMI           ___           ___               ___
+            &kp FSLH     &kp N7       &kp N8          &kp  N9         &kp STAR           ___           ___               ___             ___           ___ 
+            &kp BSLH     &kp N4       &kp N5          &kp  N6         &kp EQUAL          ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL
+  &kp LPAR  &kp SEMI     &kp N1       &kp N2          &kp  N3         &kp PLUS           ___           &kp HYP           &kp MEH         ___           ___            &kp RPAR
+                                      &kp DOT         &kp  N0         &kp MINUS           ___           ___               ___
             >;
         };
         fun_layer {
             bindings = <
-            &kp F12      &kp F7       &kp F8          &kp F9          ___                ___           ___               ___             ___           ___
-            &kp F11      &kp F4       &kp F5          &kp F6          ___                ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL 
-    ___     &kp F10      &kp F1       &kp F2          &kp F3          ___                ___           &kp HYP           &kp MEH         ___           ___             ___
-                                      ___             ___             ___                ___           ___               ___
+            ___       &kp F7       &kp F8          &kp F9          ___                ___           ___               ___             ___           ___
+            ___       &kp F4       &kp F5          &kp F6          &kp F12            ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL 
+    ___     ___       &kp F1       &kp F2          &kp F3          &kp F11            ___           &kp HYP           &kp MEH         ___           ___             ___
+                                      ___          &kp F10         ___                ___           ___               ___
             >;
         };
         util_layer {
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR      ___                ___           ___               &kp C_VOL_UP    ___           ___
-            &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT      ___                ___           ___                &kp C_VOL_DN    ___           ___ 
-    ___     ___          ___          ___             &kp HYP        ___                ___           ___               ___             ___           ___             ___
+            &kp LCTRL    &kp LALT     &kp LGUI        &kp LSHFT       ___                ___           ___               &kp C_VOL_DN    ___           ___ 
+    ___     ___          ___          ___             &kp HYP         ___                ___           ___               ___             ___           ___             ___
                                       ___             ___             ___                ___           ___               &kp C_MUTE
             >;
         };  
