@@ -22,6 +22,8 @@
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LG(LBKT)
 #define FWD &kp LG(RBKT)
+#define PTAB &kp LS(LG(LBKT))
+#define NTAB &kp LS(LG(RBKT))
 
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
@@ -105,7 +107,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             bindings = <
             &kp Q         &kp W         &kp F            &kp P            &kp B              &kp J         &kp L              &kp U            &kp Y         &kp APOS 
             &hml LCTRL A  &hml LALT R   &hml LGUI S      &hml LSHFT T     &kp G              &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I   &hmr RCTRL O
-&kp TAB     &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V              &kp K         &hmr HYP H         &hmr_meh MEH 0   &dot_morph    &qexcl        &kp TAB
+    PTAB    &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V              &kp K         &hmr HYP H         &hmr_meh MEH 0   &dot_morph    &qexcl    NTAB
                                         &lt UTIL ESC     &lt NAV SPACE    &kp TAB            &kp RET       &lt NUM BSPC       &lt FUN DEL
             >;
         };
