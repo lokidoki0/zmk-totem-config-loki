@@ -24,6 +24,7 @@
 #define FWD &kp LG(RBKT)
 #define PTAB &kp LS(LG(LBKT))
 #define NTAB &kp LS(LG(RBKT))
+#define LOCK &kp LC(LG(Q))
 
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
@@ -137,7 +138,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         };
         util_layer {
             bindings = <
-                    &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1   &bt BT_SEL 0    &bt BT_CLR             ___           ___               &kp C_VOL_UP    ___           &kp C_PWR
+                    &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1   &bt BT_SEL 0    &bt BT_CLR             ___           ___               &kp C_VOL_UP    ___           LOCK
                     &kp LCTRL    &kp LALT     &kp LGUI       &kp LSHFT       ___                    ___           ___               &kp C_VOL_DN    ___           ___ 
     &kp C_PREV      ___          ___          ___            &kp HYP         ___                    ___           ___               ___             ___           ___    &kp C_NEXT
                                               ___            ___             ___                    ___           &kp C_PP          &kp C_MUTE
