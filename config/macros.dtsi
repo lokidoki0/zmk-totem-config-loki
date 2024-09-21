@@ -2,7 +2,7 @@
     macros {
         macro_period_space_shift: macro_period_space_shift {
             label = "Period, Space, Shift";
-            bindings = <&kp KC_DOT &kp KC_SPACE &mo LEFT_SHIFT>;
+            bindings = <&kp DOT &kp SPACE &mo LSHFT>;
         };
     };
 };
