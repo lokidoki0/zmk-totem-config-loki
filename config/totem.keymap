@@ -18,6 +18,7 @@
 #define UTIL 4
 
 #include "combos.dtsi"
+bindings = <&macro_period_space_shift>;
 
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LG(LBKT)
