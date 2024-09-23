@@ -100,6 +100,27 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_fat_arrow {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&fat_arrow>;
+        };
+    };
+
+    macros {
+        fat_arrow: fat_arrow {
+            label = "=>";
+            compatible = "zmk,behavior-macro";
+            tap-ms = <40>;
+            bindings = <&kp EQUAL &kp GT>;
+            #binding-cells = <0>;
+        };
+    };
+
 / {
 // TODO: Add hyper key as HRM
     keymap {
