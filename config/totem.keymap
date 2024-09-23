@@ -144,8 +144,6 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
     &kp C_PREV      ___          ___          &kp MEH        &kp HYP         ___                    ___           ___               ___             ___           ___    &kp C_NEXT
                                               ___            ___             ___                    ___           &kp C_PP          &kp C_MUTE
             >;
-        macro_layer {
-                bindings = <&macro_period_space_shift>;  // Macro triggered in this layer
         };  
     };
 };
