@@ -18,7 +18,6 @@
 #define UTIL 4
 
 #include "combos.dtsi"
-#include "macros.dtsi"
 
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LG(LBKT)
