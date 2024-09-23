@@ -101,7 +101,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
 )
 
 
-    combos {
+ /   combos {
         compatible = "zmk,combos";
 
         combo_fat_arrow {
@@ -111,7 +111,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         };
     };
 
-    macros {
+/    macros {
         fat_arrow: fat_arrow {
             label = "=>";
             compatible = "zmk,behavior-macro";
