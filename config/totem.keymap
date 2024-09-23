@@ -107,7 +107,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         combo_fat_arrow {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&fat_arrow>;
+            bindings = <&kp DOT>;
         };
     };
 
