@@ -4,6 +4,7 @@
             label = "Period, Space, Shift";
             compatible = "zmk,behavior-macro";
             bindings = <&kp DOT &kp SPACE &sk LSFT>;
+            #binding-cells = <0>;
         };
     };
 };
