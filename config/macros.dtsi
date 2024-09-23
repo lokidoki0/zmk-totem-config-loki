@@ -3,6 +3,7 @@
         macro_period_space_shift: macro_period_space_shift {
             label = "Period, Space, Shift";
             bindings = <&kp DOT &kp SPACE &sk LSFT>;
+            #binding-cells = <0>;
         };
     };
 };
