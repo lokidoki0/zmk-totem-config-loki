@@ -1,6 +1,6 @@
 / {
     macros {
-        macro_period_space_shift: macro_period_space_shift {
+        macro_nextsentence: macro_nextsentence {
             label = "Period, Space, Shift";
             compatible = "zmk,behavior-macro";
             bindings = <&kp DOT &kp SPACE &sk RSHFT>;
