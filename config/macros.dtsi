@@ -6,11 +6,5 @@
             bindings = <&kp DOT &kp SPACE &sk LSFT>;
             #binding-cells = <0>;
         };
-        macro_fun_stickyshift: macro_fun_stickyshift {
-            label = "Fun StickyShift";
-            compatible = "zmk,behavior-macro";
-            bindings = <&mo FUN> <&sk LSFT>;
-            #binding-cells = <0>;
-        };
     };
 };
