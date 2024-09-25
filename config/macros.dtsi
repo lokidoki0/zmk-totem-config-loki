@@ -9,7 +9,7 @@
         macro_fun_stickyshift: macro_fun_stickyshift {
             label = "Fun StickyShift";
             compatible = "zmk,behavior-macro";
-            bindings = <&lt FUN> <&sk LSFT>;
+            bindings = <&mo FUN> <&sk LSFT>;
             #binding-cells = <0>;
         };
     };
