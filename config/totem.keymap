@@ -18,6 +18,7 @@
 #define UTIL 4
 
 #include "combos.dtsi"
+#include "macros.dtsi"
 
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LG(LBKT)
@@ -112,7 +113,7 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
 
 // tap: sticky shift | hold calls the FUN layer
 ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
-    bindings = <&sk RSHFT>, <&lt FUN>;
+    bindings = <FUN>, <&sk RSHFT>;
 )
 
 / {
