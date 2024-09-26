@@ -1,10 +1,10 @@
 / {
     macros {
         macro_nextsentence: macro_nextsentence {
-            label = "Period, Space, Shift";
+            label = "Conditional DOT/?, Space, Shift";
             compatible = "zmk,behavior-macro";
-            bindings = <&kp DOT &kp SPACE &sk RSHFT>;
-            #binding-cells = <0>;
+            bindings = <&kp macro_param &kp SPACE &sk RSHFT>;
+            #binding-cells = <1>;
         };
     };
 };
