@@ -90,7 +90,7 @@ ZMK_BEHAVIOR(qexcl, mod_morph,
 
 // tap: calls qexcl behavior | double tap calls next sentence macro
 ZMK_BEHAVIOR(tapdance_qmark, tap_dance,
-    bindings = <&qexcl>, <&macro_nextsentence>;
+    bindings = <&qexcl>, <&macro_nextsentence QMARK>;
 )
 
 // tap: comma | shift + tap: semicolon 
@@ -107,7 +107,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
 
 // tap: calls dot_morph behavior | double tap calls next sentence macro
 ZMK_BEHAVIOR(tapdance_dot, tap_dance,
-    bindings = <&dot_morph>, <&macro_nextsentence>;
+    bindings = <&dot_morph>, <&macro_nextsentence DOT>;
 )
 
 / {
