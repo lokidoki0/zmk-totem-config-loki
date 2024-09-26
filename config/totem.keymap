@@ -88,6 +88,11 @@ ZMK_BEHAVIOR(qexcl, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+// tap: calls qexcl behavior | double tap calls next sentence macro
+ZMK_BEHAVIOR(tapdance_qmark, tap_dance,
+    bindings = <&qexcl>, <&macro_nextsentence>;
+)
+
 // tap: comma | shift + tap: semicolon 
 ZMK_BEHAVIOR(comma_morph, mod_morph,
     bindings = <&kp COMMA>, <&kp SEMICOLON>;
@@ -111,10 +116,10 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
         compatible = "zmk,keymap";
         default_layer { // ColemakDHm
             bindings = <
-            &kp Q         &kp W         &kp F            &kp P            &kp B             &kp J         &kp L              &kp U            &kp Y         &kp APOS 
-            &hml LCTRL A  &hml LALT R   &hml LGUI S      &hml LSHFT T     &kp G             &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I   &hmr RCTRL O
-    PTAB    &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V             &kp K         &hmr HYP H         &hmr_meh MEH 0   &tapdance_dot    &qexcl        NTAB
-                                        &lt UTIL ESC     &lt NAV SPACE    &kp TAB           &kp RET       &lt NUM BSPC       &sk RSHFT
+            &kp Q         &kp W         &kp F            &kp P            &kp B             &kp J         &kp L              &kp U            &kp Y            &kp APOS 
+            &hml LCTRL A  &hml LALT R   &hml LGUI S      &hml LSHFT T     &kp G             &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
+    PTAB    &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V             &kp K         &hmr HYP H         &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark        NTAB
+                                        &lt UTIL ESC     &lt NAV SPACE    &kp TAB           &kp RET       &lt NUM BSPC       &lt FUN DEL
             >;
         };
         nav_layer { 
