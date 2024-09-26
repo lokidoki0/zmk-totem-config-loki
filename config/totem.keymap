@@ -113,7 +113,7 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
 
 // tap: sticky shift | hold calls the FUN layer
 ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
-    bindings = <FUN>, <&sk RSHFT>;
+    bindings = <FUN>, <RSHFT>;
 )
 
 / {
