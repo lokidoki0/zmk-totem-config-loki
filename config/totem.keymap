@@ -111,8 +111,8 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
 )
 
 // tap: sticky shift | hold calls the FUN layer
-ZMK_BEHAVIOR(tapdance_skshft, hold_tap,
-    bindings = <&sk LSFT>, <&lt FUN>;
+ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
+    bindings = <&sk LSFT>, <&mo FUN>;
 )
 
 / {
@@ -124,7 +124,7 @@ ZMK_BEHAVIOR(tapdance_skshft, hold_tap,
             &kp Q         &kp W         &kp F            &kp P            &kp B             &kp J         &kp L              &kp U            &kp Y            &kp APOS 
             &hml LCTRL A  &hml LALT R   &hml LGUI S      &hml LSHFT T     &kp G             &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
     PTAB    &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V             &kp K         &hmr HYP H         &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark        NTAB
-                                        &lt UTIL ESC     &lt NAV SPACE    &kp TAB           &kp RET       &lt NUM BSPC       &tapdance_skshft
+                                        &lt UTIL ESC     &lt NAV SPACE    &kp TAB           &kp RET       &lt NUM BSPC       &holdtap_skshft
             >;
         };
         nav_layer { 
