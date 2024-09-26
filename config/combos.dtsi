@@ -7,8 +7,6 @@
    ╰───────╮ 32  33  34 │ 35  36  37 ╭───────╯     ╰───────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────╯
            ╰────────────┴────────────╯                     ╰─────────────┴─────────────╯             */
 
-#include "macros.dtsi"
-
 // use require-prior-idle-ms for combos
 #undef COMBO_HOOK
 #define COMBO_HOOK require-prior-idle-ms = <150>;
