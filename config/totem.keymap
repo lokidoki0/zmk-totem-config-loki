@@ -111,7 +111,7 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
     bindings = <&dot_morph>, <&macro_nextsentence DOT>;
 )
 
-// hold: first argument | tap second argument
+// hold: first argument | tap: second argument
 ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <280>;
