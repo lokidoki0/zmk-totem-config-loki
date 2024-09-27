@@ -117,7 +117,7 @@ ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
     tapping-term-ms = <280>; \
     quick-tap-ms = <QUICK_TAP_MS>; \
     require-prior-idle-ms = <150>; \
-    bindings = <$kp A>, <&kp B>; \
+    bindings = <A>, <B>; \
     hold-trigger-key-positions = <RH2>; \
     hold-trigger-on-release; \
 )
