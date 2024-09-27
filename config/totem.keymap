@@ -113,11 +113,11 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
 
 // tap: sticky shift | hold calls the FUN layer
 ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
-    flavor = "tap-preferred"; \
+    flavor = "balanced"; \
     tapping-term-ms = <280>; \
     quick-tap-ms = <QUICK_TAP_MS>; \
     require-prior-idle-ms = <150>; \
-    bindings = <&trans>, <&trans>; \
+    bindings = <$none>, <&none>; \
     hold-trigger-on-release; \
 )
 
