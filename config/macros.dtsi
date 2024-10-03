@@ -10,8 +10,7 @@
         macro_commaspace: macro_commaspace {
             label = "Send Comma and Space";
             compatible = "zmk,behavior-macro";
-            bindings = <&kp COMMA &kp SPACE>;
-            #binding-cells = <0>;
+            bindings = <&kp COMMA> <&kp SPACE>;
       };
     };
 };
