@@ -89,9 +89,9 @@ ZMK_BEHAVIOR(qexcl, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: calls qexcl behavior | double tap calls addspaceshift macro
+// tap: calls qexcl behavior | double tap calls nextsentence macro
 ZMK_BEHAVIOR(tapdance_qmark, tap_dance,
-    bindings = <&qexcl>, <&macro_addspaceshift QMARK>;
+    bindings = <&qexcl>, <&macro_nextsentence QMARK>;
 )
 
 // tap: comma | shift + tap: semicolon 
@@ -100,9 +100,9 @@ ZMK_BEHAVIOR(comma_morph, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: calls comma_morph behavior | double tap calls addspaceshift macro
+// tap: calls comma_morph behavior | double tap calls send string macro
 ZMK_BEHAVIOR(tapdance_comma, tap_dance,
-    bindings = <&comma_morph>, <&macro_addspaceshift COMMA>>;
+    bindings = <&comma_morph>, <&macro_sendstring ", ">;
 )
 
 // tap: dot | shift + tap: colon 
@@ -111,9 +111,9 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: calls dot_morph behavior | double tap calls addspaceshift macro
+// tap: calls dot_morph behavior | double tap calls nextsentence macro
 ZMK_BEHAVIOR(tapdance_dot, tap_dance,
-    bindings = <&dot_morph>, <&macro_addspaceshift DOT>;
+    bindings = <&dot_morph>, <&macro_nextsentence DOT>;
 )
 
 // hold: first argument | tap: second argument
