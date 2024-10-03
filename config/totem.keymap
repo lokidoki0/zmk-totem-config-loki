@@ -77,8 +77,8 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
-// special HRMs for the right meh key, as it involves a modmorph
-MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
+// special HRMs for the right meh key, as it involves a modmorph. Also added tapdance to the key
+MAKE_HRM(hmr_meh, &kp, &tapdance_comma, KEYS_L THUMBS)
 // MAKE_HRM(hmr_lpar, &kp, &lpar, KEYS_L THUMBS)    // "    "   "   "
 // MAKE_HRM(hmr_rpar, &kp, &rpar, KEYS_L THUMBS)    // "    "   "   "
 
@@ -98,6 +98,11 @@ ZMK_BEHAVIOR(tapdance_qmark, tap_dance,
 ZMK_BEHAVIOR(comma_morph, mod_morph,
     bindings = <&kp COMMA>, <&kp SEMICOLON>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: calls comma_morph behavior | double tap adds comma and space
+ZMK_BEHAVIOR(tapdance_comma, tap_dance,
+    bindings = <&comma_morph>, <&kp COMMA &kp SPACE>;
 )
 
 // tap: dot | shift + tap: colon 
