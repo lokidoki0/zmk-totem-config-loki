@@ -102,7 +102,7 @@ ZMK_BEHAVIOR(comma_morph, mod_morph,
 
 // tap: calls comma_morph behavior | double tap adds comma and space
 ZMK_BEHAVIOR(tapdance_comma, tap_dance,
-    bindings = <&comma_morph>, <&kp COMMA &kp SPACE>;
+    bindings = <&comma_morph>, <&kp COMMA> <&kp SPACE>;
 )
 
 // tap: dot | shift + tap: colon 
