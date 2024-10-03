@@ -100,9 +100,9 @@ ZMK_BEHAVIOR(comma_morph, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: calls comma_morph behavior | double tap calls send string macro
+// tap: calls comma_morph behavior | double tap calls commaspace macro to add ", "
 ZMK_BEHAVIOR(tapdance_comma, tap_dance,
-    bindings = <&comma_morph>, <&macro_nextsentence COMMA>;
+    bindings = <&comma_morph>, <&macro_commaspace>;
 )
 
 // tap: dot | shift + tap: colon 
