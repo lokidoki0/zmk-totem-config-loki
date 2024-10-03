@@ -1,19 +1,16 @@
 / {
     macros {
         macro_nextsentence: macro_nextsentence {
-            label = "parameterized DOT/?, Space, Shift";
+            label = "parameterized DOT or ?, Space, Shift";
             compatible = "zmk,behavior-macro-one-param";
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>, <&kp SPACE &sk RSHFT>;
             #binding-cells = <1>;
         };
-    };
-};
-{
-    macros {
+
         macro_sendstring: macro_sendstring_behavior {
             label = "Send Dynamic String";
             compatible = "zmk,behavior-macro-one-param";
-            bindings = <&macro ZMK_SEND_STRING(MACRO_PLACEHOLDER)>;
+            bindings = <&macro ZMK_SEND_STRING(", ")>;
             #binding-cells = <1>;
         };
     };
