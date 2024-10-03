@@ -8,3 +8,13 @@
         };
     };
 };
+{
+    macros {
+        macro_sendstring: macro_sendstring_behavior {
+            label = "Send Dynamic String";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings = <&macro ZMK_SEND_STRING(MACRO_PLACEHOLDER)>;
+            #binding-cells = <1>;
+        };
+    };
+};
