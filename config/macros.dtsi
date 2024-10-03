@@ -7,11 +7,10 @@
             #binding-cells = <1>;
         };
 
-        macro_sendstring: macro_sendstring_behavior {
-            label = "Send Dynamic String";
-            compatible = "zmk,behavior-macro-one-param";
-            bindings = <&macro ZMK_SEND_STRING(MACRO_PLACEHOLDER)>;
-            #binding-cells = <1>;
+        macro_commaspace: macro_commaspace {
+            label = "Send Comma and Space";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp COMMA &kp SPACE>;
       };
     };
 };
