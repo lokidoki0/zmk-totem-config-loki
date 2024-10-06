@@ -12,6 +12,14 @@
             compatible = "zmk,behavior-macro";
             bindings = <&kp COMMA &kp SPACE>;
             #binding-cells = <0>;
-      };
+        };
+
+        macro_idle_tap: macro_idle_tap {
+            label = "Idle Tap with parameterized key action";
+            compatible = "zmk,behavior-macro-one-param";
+            require-prior-idle-ms = <500>; 
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            #binding-cells = <1>;
+        };
     };
 };
