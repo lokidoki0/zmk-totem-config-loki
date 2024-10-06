@@ -118,12 +118,12 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
     bindings = <&dot_morph>, <&macro_nextsentence DOT>;
 )
 
-// tap: deletes one character | double tap calls delete the entire word
+/* // tap: deletes one character | double tap calls delete the entire word
 ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
-    bindings = <&kp BSPC>, <&kp LALT(BSPC)>;
-)
+    bindings = <&kp BSPC>, <&kp LA(BSPC)>;
+) */
 
-// tap: calls single quote | double tap calls double quotes
+// tap: calls single quote | double tap calls double quotes // not using it becuase I want to get used to home row mods
 ZMK_BEHAVIOR(tapdance_APOS, tap_dance,
     bindings = <&kp APOS>, <&kp LS(APOS)>;
 )
