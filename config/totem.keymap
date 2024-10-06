@@ -118,6 +118,16 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
     bindings = <&dot_morph>, <&macro_nextsentence DOT>;
 )
 
+// tap: deletes one character | double tap calls delete the entire word
+ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
+    bindings = <&BSPC>, <LA(BSCP)>;
+)
+
+// tap: calls single quote | double tap calls double quotes
+ZMK_BEHAVIOR(tapdance_APOS, tap_dance,
+    bindings = <APOS>, <LS(APOS)>;
+)
+
 // hold: first argument | tap: second argument
 ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
     flavor = "tap-preferred";
@@ -135,10 +145,10 @@ ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
         compatible = "zmk,keymap";
         default_layer { // ColemakDHm
             bindings = <
-                &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L              &kp U            &kp Y            &kp APOS 
-                &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
-    ZOOMOUT     &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H         &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark        ZOOMIN
-                                            &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &lt NUM BSPC       &holdtap_skshft FUN RSHFT
+                &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L                        &kp U            &kp Y            &tapdance_APOS 
+                &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N                 &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
+    ZOOMOUT     &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H                   &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark        ZOOMIN
+                                            &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &lt NUM &tapdance_BSPC       &holdtap_skshft FUN RSHFT
             >;
         };
         nav_layer { 
