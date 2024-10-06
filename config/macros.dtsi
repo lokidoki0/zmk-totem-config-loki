@@ -14,13 +14,5 @@
             #binding-cells = <0>;
         };
 
-        // macro to avoid accidental presses on certain keys
-        macro_idletap: macro_idletap {
-            label = "Idle Tap with parameterized key action";
-            compatible = "zmk,behavior-macro-one-param";
-            require-prior-idle-ms = <500>; 
-            bindings = <&macro_param_1to1>;
-            #binding-cells = <1>;
-        };
     };
 };
