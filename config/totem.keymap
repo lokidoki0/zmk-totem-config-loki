@@ -24,9 +24,9 @@
 
 #define QUICK_TAP_MS 175
 
-// add idle time to avoide accidental key presses
+// add idle time to avoid accidental key presses
 ZMK_BEHAVIOR(idle_tap, idle_tap,
-    bindings = <&kp>, 
+    bindings = <&kp>; 
     require-prior-idle-ms = <500>;
 )
 
