@@ -17,9 +17,11 @@
         // macro to avoid accidental presses on certain keys
         macro_idletap: macro_idletap {
             label = "Idle Tap with parameterized key action";
-            compatible = "zmk,behavior-macro-one-param";
-            require-prior-idle-ms = <500>; 
-            bindings = <&macro_param_1to1>;
+            compatible = "zmk,behavior-hold-tap"; // Changing to hold-tap behavior to support idle timing
+            flavor = "tap-preferred";             // Use tap-preferred to avoid accidental presses
+            tapping-term-ms = <500>;              // Using tapping-term to simulate idle time behavior
+            bindings = <&kp &macro_param_1to1>;   // Referencing parameterized action
+            hold-trigger-on-release;              // Trigger on release to prevent pre-hold action
             #binding-cells = <1>;
         };
     };
