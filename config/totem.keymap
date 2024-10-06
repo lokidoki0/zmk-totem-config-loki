@@ -28,6 +28,7 @@
 ZMK_BEHAVIOR(idle_tap, idle_tap,
     bindings = <&kp>; 
     require-prior-idle-ms = <500>;
+    #binding-cells = <1>;
 )
 
 // smart-layer config
