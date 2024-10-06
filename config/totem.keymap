@@ -120,7 +120,7 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
 
 // tap: deletes one character | double tap calls delete the entire word
 ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
-    bindings = <&BSPC>, <LA(BSCP)>;
+    bindings = <&BSPC>, <LA(BSPC)>;
 )
 
 // tap: calls single quote | double tap calls double quotes
