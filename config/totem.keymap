@@ -31,6 +31,13 @@
 #define HYP LS(LC(LA(LGUI)))
 #define MEH LS(LC(LALT))
 
+ZMK_BEHAVIOR(idle_tap, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <500>;
+    bindings = <&kp YOUR_KEY>, <&none>;  // Replace YOUR_KEY with the action you want, like LS(LG(RBKT))
+)
+
 /* ------------------------ general config ----------------------- */
 
 #define QUICK_TAP_MS 175
