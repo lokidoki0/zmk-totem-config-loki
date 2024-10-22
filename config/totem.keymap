@@ -124,12 +124,12 @@ ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
 )
 
 // hold: first argument | tap: second argument
-ZMK_BEHAVIOR(holdtap_tapdancebspc, hold_tap,
+ZMK_BEHAVIOR(holdtap_NUM_tdBSPC, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <280>;
     quick-tap-ms = <QUICK_TAP_MS>;
     require-prior-idle-ms = <150>;
-    bindings = <&mo>, <&tapdance_BSPC>;
+    bindings = <&mo NUM>, <&tapdance_BSPC>;
     hold-trigger-on-release;
 )
 
@@ -157,10 +157,10 @@ ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
         compatible = "zmk,keymap";
         default_layer { // ColemakDHm
             bindings = <
-                &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L                               &kp U            &kp Y            &kp APOS 
-                &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N                        &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
-    ZOOMOUT     &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H                          &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    ZOOMIN
-                                            &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &holdtap_tapdancebspc NUM           &holdtap_skshft FUNC RSHFT
+                &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L                    &kp U            &kp Y            &kp APOS 
+                &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N             &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
+    ZOOMOUT     &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H               &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    ZOOMIN
+                                            &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &holdtap_NUM_tdBSPC      &holdtap_skshft FUNC RSHFT
             >;
         };
         nav_layer { 
