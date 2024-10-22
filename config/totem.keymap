@@ -26,8 +26,8 @@
 #define PTAB &kp LS(LG(LBKT))
 #define NTAB &kp LS(LG(RBKT))
 #define LOCK &kp LC(LG(Q))
-// #define ZOOMIN &kp LG(PLUS)
-// #define ZOOMOUT &kp LG(MINUS)
+#define ZOOMIN &kp LG(PLUS)
+#define ZOOMOUT &kp LG(MINUS)
 
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
@@ -132,7 +132,6 @@ ZMK_BEHAVIOR(tapdance_APOS, tap_dance,
 )
 */
 
-/*
 // hold: first argument | tap: second argument
 ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
     flavor = "tap-preferred";
@@ -142,7 +141,6 @@ ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
     bindings = <&mo>, <&sk>;
     hold-trigger-on-release;
 )
-*/
 
 / {
 // TODO: Add hyper key as HRM
@@ -153,8 +151,8 @@ ZMK_BEHAVIOR(holdtap_skshft, hold_tap,
             bindings = <
                 &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L              &kp U            &kp Y            &kp APOS 
                 &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
-    &sk LSHFT   &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H         &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    &sk RSHFT
-                                            &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &lt NUM BSPC       &lt FUNC DEL
+    ZOOMOUT     &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H         &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    ZOOMIN
+                                            &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &lt NUM BSPC       &holdtap_skshft FUNC RSHFT
             >;
         };
         nav_layer { 
